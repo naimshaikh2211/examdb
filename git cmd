@@ -1,0 +1,33 @@
+
+Git global setup
+
+git config --global user.name "Naim Shaikh"
+git config --global user.email "naimshaikh780@gmail.com"
+
+Create a new repository
+
+git clone https://gitlab.com/naimsahikh1795/examrepo.git
+cd examrepo
+touch README.md
+git add README.md
+git commit -m "add README"
+git push -u origin master
+
+Push an existing folder
+
+cd existing_folder
+git init
+git remote add origin https://gitlab.com/naimsahikh1795/examrepo.git
+git add .
+git commit -m "Initial commit"
+git push -u origin master
+
+Push an existing Git repository
+
+cd existing_repo
+git remote rename origin old-origin
+git remote add origin https://gitlab.com/naimsahikh1795/examrepo.git
+git push -u origin --all
+git push -u origin --tags
+
+
